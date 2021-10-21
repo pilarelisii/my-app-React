@@ -25,10 +25,3 @@ export function Navbar(){
     </>
     )
 }
-export function ItemListContainer(props) {
-    return (
-        <>
-        <h1>{props.texto}</h1>
-        </>
-    )
-}
