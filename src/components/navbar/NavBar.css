@@ -3,8 +3,9 @@
 .contenedor-header {
     background-color: #ffffff;
     width: 100%;
-    box-shadow: 1px 12px 20px -20px rgb(0 0 0 / 75%);
+    border-bottom: 3px solid #c2b29d;
     font-family: 'Nunito', sans-serif;
+    margin-bottom: 30px;
 }
 .header-nav {
     width: 90%;

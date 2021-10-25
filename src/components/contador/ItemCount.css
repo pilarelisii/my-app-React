@@ -1,10 +1,10 @@
 .contenedor-contador {
     width: 250px;
     padding: 10px;
-    border: 2px solid #352f2733;
+    border: 1px solid #9b9b9b33;
     border-radius: 10px;
     margin:auto;
-    background-color: #c2b29d1f;
+    background-color: #dfdfdf1f;
 }
 .contenedor-contador .nombre-contador {
     font-size: 18px;
@@ -17,8 +17,6 @@
 .contenedor-contador .contador button {
     border: 1px solid #c2b29d;
     background-color: #ffffff;
-    font-size: 15px;
-    padding: 3px;
     border-radius: 10px;
     font-weight: 900;
     flex: 1;
@@ -37,4 +35,9 @@
     flex: 2;
     font-weight: 900;
     text-align: center;
+}
+.contenedor-ItemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
