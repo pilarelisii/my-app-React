@@ -1,11 +1,12 @@
 .boton-carrito {
-    border: 2px solid none;
+    border: 1px solid black;
     background-color: white;
     font-size: 15px;
     padding: 4px;
     border-radius: 10px;
 }
 .boton-carrito:hover {
-    border: 2px solid #c2b29d;
+    box-shadow: 0 0 0 2px #0000001f;
     cursor: pointer;
+    transition: .2s;
 }

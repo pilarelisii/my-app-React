@@ -1,7 +1,6 @@
 import { Navbar } from './components/navbar/NavBar.js';
-//import { ItemListContainer } from './components/contador/ItemCount.js';
-import {ItemList} from './components/contador/ItemCount.js'
-
+import { ItemList } from './components/ItemList/ItemList.js'
+import {ItemDetail} from './components/detalleProducto/ItemDetail.js'
 
 function App() {
 
@@ -9,7 +8,8 @@ function App() {
     <>
     <Navbar />
     
-    <ItemList/>
+    {/*<ItemList/>*/}
+    <ItemDetail />
     </>
     )
 }

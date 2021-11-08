@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
 .contenedor-contador {
-    width: 250px;
     padding: 10px;
-    border: 1px solid #9b9b9b33;
-    border-radius: 10px;
-    margin:auto;
+    border: 1px solid #9b9b9b13;
+    border-radius: 5px;
+    margin:10px auto;
     background-color: #dfdfdf1f;
 }
 .contenedor-contador .nombre-contador {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
 }
 .contenedor-contador .contador {
@@ -31,7 +35,7 @@
 .contenedor-contador .contador p {
     border-radius: 10px;
     padding: 5px;
-    font-size: 15px; 
+    font-size: 14px; 
     flex: 2;
     font-weight: 900;
     text-align: center;
@@ -40,4 +44,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.detalle {
+    outline: none;
+    border: 0;
+    background-color: #c2b29d;
+    color: black;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.detalle:hover {
+    cursor: pointer;
+    background-color: #c2b29d86;
+    transition: .2s;
 }
