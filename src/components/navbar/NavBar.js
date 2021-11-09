@@ -1,7 +1,7 @@
-
+import { Link } from 'react-router-dom';
+import React from 'react';
 import './NavBar.css';
 import { CarritoBoton } from '../carritoboton/CarritoBoton';
-
 
 
 export function Navbar(){
@@ -10,14 +10,15 @@ export function Navbar(){
     <header className="contenedor-header">
             <nav className="header-nav">
                 <div className="logo-brand">
-                   <a href="//"> <img src="" alt="LOGO"/> </a>
+                   <Link to="/"><img src="" alt="LOGO"/></Link>
                 </div>
                 <div className="menu">
                     <ul>
-                        <a href="//"><li>Inicio</li></a>
-                        <a href="//"><li>Productos</li></a>
-                        <a href="//"><li>Preguntas Frecuentes</li></a>
-                        <a href="//"><li>Contacto</li></a>
+                        
+                        <Link to="/"><li>Inicio</li></Link> 
+                        <Link to="/"><li>Productos</li></Link> 
+                        <Link to="/PreguntasFrecuentes"><li>Preguntas Frecuentes</li></Link>
+                        <Link to="/Contacto"><li>Contacto</li></Link>
                     </ul>
                 </div>
                 <CarritoBoton/>

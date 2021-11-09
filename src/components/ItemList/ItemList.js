@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import './ItemList.css';
+import { Link } from 'react-router-dom';
+import React from 'react';
 import { Card } from 'react-bootstrap';
 import articulos from './articulos/articulos.json';
 import { ItemCount } from '../contador/ItemCount';
@@ -15,7 +17,7 @@ export function ItemList() {
             <Card.Title>Articulo {nombre}</Card.Title>
             <ItemCount stock='5' inicio='0'/>
             <h3>Precio: <i>{precio}</i></h3>
-            <button className="detalle">Ver detalle</button>
+            <Link to={`/detalleProducto/${id}`}><button className="detalle">Ver detalle</button></Link>
             </Card.Body>
             </Card>
             </>
@@ -46,7 +48,7 @@ export function ItemList() {
     return (
         <>
         <div className='contenedor-ItemList'>
-        {productos?.map(producto => <Producto key={producto.id} nombre={producto.nombre} precio={producto.precio}/>)}
+        {productos?.map(producto => <Producto key={producto.id} id={producto.id} nombre={producto.nombre} precio={producto.precio}/>)}
         </div>
         </>
     )

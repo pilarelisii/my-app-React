@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Montserrat:ital,wght@0,400;1,300&family=Raleway&display=swap');
+.detalle-art {
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+.detalle-art article {
+    background-color: #f1f1f1;
+    box-shadow: 0 0 0 0 2px #14141425;
+    padding: 10px 10px 10px 20px;
+}
+.detalle-art article .nombre-art {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+}
+.detalle-art article .precio {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+.addCart {
+    border-radius: 5px;
+    background-color: #c2b29d86;
+    outline: none;
+    border: 0 solid black;
+    color: black;
+    padding: 6px;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.addCart:hover {
+    background-color: #d3c8bb86;
+    transition: .5s;
+    cursor:pointer;
+}
+.descripcion {
+    font-size: 1.2rem;
+    font-family: 'Raleway', sans-serif;
+    line-height: 147%;
+    font-weight: 400;
+}
