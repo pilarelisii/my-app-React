@@ -18,9 +18,16 @@
     font-weight: 300;
     font-size: 1rem;
     border-radius: 5px;
+    padding: 4px;
 }
 .detalle:hover {
     cursor: pointer;
     background-color: #c2b29d86;
     transition: .2s;
+}
+.contenedor-contador img {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: block;
 }

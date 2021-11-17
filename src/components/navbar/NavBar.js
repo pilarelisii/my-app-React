@@ -21,7 +21,7 @@ export function Navbar(){
                         <Link to="/Contacto"><li>Contacto</li></Link>
                     </ul>
                 </div>
-                <CarritoBoton/>
+                <Link to="/Cart"><CarritoBoton/></Link>
             </nav>
     </header>
     </>

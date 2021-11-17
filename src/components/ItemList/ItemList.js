@@ -3,20 +3,21 @@ import './ItemList.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import articulos from './articulos/articulos.json';
+import articulos from '../data/articulos.json';
 import { ItemCount } from '../contador/ItemCount';
 
 export function ItemList() {
 
 
-    function Producto({id, nombre, precio}) {
+    function Producto({id, nombre, precio, urlImg}) {
         return (
             <>
             <Card style={{ width: '18rem' }} className='contenedor-contador' key={id}>
             <Card.Body>
-            <Card.Title>Articulo {nombre}</Card.Title>
+            <img src={urlImg} alt="img"/>
+            <h3>Articulo {nombre}</h3>
             <ItemCount stock='5' inicio='0'/>
-            <h3>Precio: <i>{precio}</i></h3>
+            <h4>Precio: {precio}</h4>
             <Link to={`/detalleProducto/${id}`}><button className="detalle">Ver detalle</button></Link>
             </Card.Body>
             </Card>
@@ -48,7 +49,7 @@ export function ItemList() {
     return (
         <>
         <div className='contenedor-ItemList'>
-        {productos?.map(producto => <Producto key={producto.id} id={producto.id} nombre={producto.nombre} precio={producto.precio}/>)}
+        {productos?.map(producto => <Producto key={producto.id} id={producto.id} nombre={producto.nombre} precio={producto.precio} urlImg={producto.urlImg}/>)}
         </div>
         </>
     )

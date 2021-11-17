@@ -1,5 +1,5 @@
 import './ItemDetail.css';
-import items from '../ItemList/articulos/articulos.json';
+import items from '../data/articulos.json';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ItemDetail } from './ItemDetail';
@@ -34,7 +34,7 @@ export function ItemDetailContainer() {
    console.log(item)
    return (
     <>
-        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} />
+        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} urlImg={item.urlImg} />
     </>
    );
 }

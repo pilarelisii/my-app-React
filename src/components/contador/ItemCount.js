@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './ItemCount.css';
 import { Card } from 'react-bootstrap';
 
-export function ItemCount({stock, inicio}) {
+export function ItemCount({stock}) {
 
     const [counter, setCounter] = useState(0)
     const sumar = () => { 
@@ -11,7 +11,7 @@ export function ItemCount({stock, inicio}) {
         }
     };
     const restar = () => {
-        if(counter > inicio) {
+        if(counter > 0) {
         setCounter(counter - 1);
         }
     }
@@ -22,20 +22,11 @@ export function ItemCount({stock, inicio}) {
     <>
     <Card.Text className='contador'>
         <button className='btn-sumar' onClick={sumar} > + </button>
-        <Stock cantidad={counter}/>
+        <input value={counter} id="contador"></input>
+        <label for="contador">{counter}</label>
         <button onClick={restar} > - </button>
     </Card.Text>
     
     </>
     );
 };
-
-
-
-export function Stock(props) {
-    return (
-        <>
-        <p>{props.cantidad}</p>
-        </>
-    )
-}
