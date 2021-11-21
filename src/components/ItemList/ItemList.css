@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Montserrat:ital,wght@0,400;1,300&family=Raleway&display=swap');
 * {
     font-family: 'Nunito', sans-serif;
 }
 
-.contenedor-ItemList {
+ .contenedor-ItemList {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+} 
+h2 {
+    font-family: 'Bebas Neue', cursive;
+}
+h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 .detalle {
     outline: none;
@@ -25,9 +31,9 @@
     background-color: #c2b29d86;
     transition: .2s;
 }
-.contenedor-contador img {
+/* .contenedor-ItemList img {
     width: 80%;
     margin: auto;
     margin-bottom: 20px;
     display: block;
-}
+} */

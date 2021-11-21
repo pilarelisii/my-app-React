@@ -34,7 +34,7 @@ export function ItemDetailContainer() {
    console.log(item)
    return (
     <>
-        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} urlImg={item.urlImg} />
+        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} urlImg={item.urlImg} stock={item.stock} />
     </>
    );
 }

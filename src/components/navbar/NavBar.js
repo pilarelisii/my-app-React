@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
 import './NavBar.css';
-import { CarritoBoton } from '../carritoboton/CarritoBoton';
+import { CarritoBoton } from '../cart/carritoboton/CarritoBoton';
 
 
 export function Navbar(){

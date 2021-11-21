@@ -1,44 +1,61 @@
 import './ItemDetail.css';
-import { ItemCount } from '../contador/ItemCount';
-import '../contador/ItemCount.css';
+import { ItemCount } from '../contador/ItemCount.js';
 import swal from 'sweetalert';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
+import { UsingCart } from '../../context/CartContext';
+import { Link } from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 
-export function ItemDetail({id, nombre, precio, urlImg}) {
-
-        const onAddOptions = (evt) => {
-            swal({
-                title: "Ya elegiste tus productos", 
-                text: "¿Desea seguir comprando?",
-                icon: "success",
-                buttons: ["Seguir comprando", "Ir al cart"]
-            }).then(res=> {
-                if(res) {
-                    window.location = "/Cart"
-                }
-            })
+export function ItemDetail({id, nombre, precio, urlImg, stock}) {
+    
+    const {addItem} = UsingCart();
+    
+    
+    const onAddOptions = (quantity) => {
+        var text = "";
+        var secText = "";
+        if (quantity > 1) {
+            text = " productos ";
+            secText = " agregaron "
+        } else {
+             text = " producto "
+             secText = " agregó ";
         }
-        return (
-            
-            <>
-            <section key={id} className="detalle-art">
-                <article>
-                    <h1 className="nombre-art">Articulo: {nombre} </h1>
-                    <img src={urlImg} alt="aca iria la imagen"/>
-                    <h3 className="precio">Precio: {precio}</h3>
-                    <h5 className="descripcion">Descripcion: Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h5>
-                </article>
-                <article>
-                    <button className="addCart" onClick={onAddOptions}>Agregar al carrito</button>
-                    <ItemCount stock="5"/>
-                </article>
-            </section>
-
-
-            
-            </>
-        );
+        
+        swal({
+            title: quantity + text + "se" + secText + "al carrito!" , 
+            icon: "success",
+            timer: 900,
+            buttons: false
+        })
+        
+        addItem({id, nombre, precio}, quantity);
     }
+    
+    return (
+        
+        <>
+        <Link to="/"><FontAwesomeIcon icon={faChevronLeft} className="goBack"/></Link>
+        <section key={id} className="detalle-art">
+            <article>
+                <h1 className="nombre-art">Articulo: {nombre} </h1>
+                <img src={urlImg} alt="aca iria la imagen"/>
+                <h3 className="precio">Precio: {precio}</h3>
+                <h5 className="descripcion">Descripcion: Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h5>
+            </article>
+            <article>
+        
+                <ItemCount stock={stock} onAdd={onAddOptions}/>
+                <Link to="/Cart"><button variant="dark" className="goCart"><p>Ir al carrito</p></button></Link>
+            </article>
+        </section>
+
+        </>
+    );
+}
+

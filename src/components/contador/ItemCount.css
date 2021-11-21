@@ -4,15 +4,8 @@
     font-family: 'Nunito', sans-serif;
 }
 .contenedor-contador {
-    padding: 10px;
-    border: 1px solid #9b9b9b13;
-    border-radius: 5px;
-    margin:10px auto;
-    background-color: #dfdfdf1f;
-}
-.contenedor-contador .nombre-contador {
-    font-size: 15px;
-    font-weight: 400;
+    margin: 10px 5px 10px 5px;
+    display: flex;
 }
 .contenedor-contador .contador {
     border: 1px solid #c2b29d;
@@ -20,8 +13,9 @@
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
+    margin-right: 10px;
 }
-.contenedor-contador .contador button {
+.contenedor-contador .contador .btn {
     background-color: white;
     outline: 0;
     border: 0;
@@ -30,37 +24,33 @@
     margin: 3px;
     font-size: 15px;
 }
-.contenedor-contador .contador button:hover {
+.contenedor-contador .contador .btn:hover {
     cursor: pointer;
     background-color: #f0f0f038;
 }
-.contenedor-contador .contador label {
+.contenedor-contador .contador p {
     border-radius: 10px;
-    padding: 5px;
+    padding: 5px 8px;
     font-size: 14px; 
-    flex: 2;
+    flex: 1;
     font-weight: 900;
     text-align: center;
+    margin: auto;
 }
-.contador input {
-    display: none;
-}
-.contenedor-ItemList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.detalle {
+.addCart {
     outline: none;
     border: 0;
     background-color: #c2b29d;
     color: black;
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 5px;
+    padding: 4px 8px;
 }
-.detalle:hover {
+.addCart p {
+    margin: auto;
+}
+.addCart:hover {
     cursor: pointer;
     background-color: #c2b29d86;
     transition: .2s;

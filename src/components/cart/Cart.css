@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Montserrat:ital,wght@0,400;1,300&family=Raleway&display=swap');
+.item {
+    width: 90%;
+    margin: auto auto 10px;
+}
+.clear {
+    margin: 0 5% 10px;
+    font-size: 2.5rem;
+}
+.notActive {
+    display: none;
+}
+.active {
+    display: block;
+}
+.vacio {
+    margin: auto;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+.vacio a {
+    color: rgb(57, 17, 236);
+    font-weight: normal;
+    text-decoration: none;
+}
