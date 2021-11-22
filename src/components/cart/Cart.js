@@ -10,15 +10,16 @@ import { Link } from 'react-router-dom';
 export function Cart() {
     const {cart, removeItem, clearCart} = UsingCart(); 
     
-    if (cart > 0) {
+    if (cart.length > 0) {
         var show = false;
     } else if ( cart <= 0) {
         show = true
     }
 
+    
     return (
         <>
-        <FontAwesomeIcon icon={faTrashAlt} className="clear" onClick={clearCart}/>
+        { show ? "" : <FontAwesomeIcon icon={faTrashAlt} className="clear" onClick={clearCart}/>}
             {cart?.map((itemHere) => {
                 return(
         
@@ -26,7 +27,7 @@ export function Cart() {
                 <Card.Body style={{display: 'flex', justifyContent:'space-between'}}>
                     <div>
                         <h1>ARTICULO: {itemHere.nombre}</h1>
-                        <h2>Precio: {itemHere.precio}</h2>
+                        <h2>Precio: ${itemHere.precio}</h2>
                     </div>
                     <div>
                         <p style={{ fontSize: 30, margin: 'auto'}}>{itemHere.quantity}</p>
@@ -34,9 +35,15 @@ export function Cart() {
                     </div>
                 </Card.Body>
                 </Card>
+            
                 );
             })
             }
+        { show ? "" :<div className="bottom">
+                        <p className="totalPrice">TOTAL: ${cart.reduce((acc, curr) => acc + curr.precio * curr.quantity, 0)}</p>
+                        <button className="fin"><p>Terminar compra</p></button> 
+                    </div>
+        }
         {show && <div className="active"> 
                     <h1 className="vacio"> No tenes ningun producto en el carrito! <Link to="/">Compra ya!</Link></h1>
                 </div> }

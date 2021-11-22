@@ -42,7 +42,7 @@ export function ItemDetail({id, nombre, precio, urlImg, stock}) {
             <article>
                 <h1 className="nombre-art">Articulo: {nombre} </h1>
                 <img src={urlImg} alt="aca iria la imagen"/>
-                <h3 className="precio">Precio: {precio}</h3>
+                <h3 className="precio">Precio: ${precio}</h3>
                 <h5 className="descripcion">Descripcion: Lorem ipsum dolor sit amet, 
                 consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 

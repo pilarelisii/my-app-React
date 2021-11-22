@@ -7,15 +7,14 @@ import { UsingCart } from '../../../context/CartContext';
 export function CarritoBoton() {
     const {cart} = UsingCart();
 
-    console.log(cart.length)
-
+    var totalCart = cart.reduce((acc, curr) => acc + curr.quantity, 0)
     return (
     <>
         <div className="carrito">
             <button className="boton-carrito">
             <FontAwesomeIcon icon={faShoppingCart} />
             </button>
-            <p>{cart.length}</p>
+            <p>{totalCart}</p>
         </div>
     </>
     )

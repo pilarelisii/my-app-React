@@ -6,7 +6,8 @@ import { ItemDetail } from './ItemDetail';
 
 
 export function ItemDetailContainer() {
-    console.log('cargan '+items)
+    
+
 
     const { itemId } = useParams();
     const [item, setItem] = useState(null);
@@ -29,8 +30,7 @@ export function ItemDetailContainer() {
     }, [itemId]);
 
     
-
-   if(!item) return null;
+    if(!item) return(<h1 className="loading">Cargando..</h1> || null)
    console.log(item)
    return (
     <>

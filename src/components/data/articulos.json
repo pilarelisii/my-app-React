@@ -3,13 +3,13 @@
     {
         "id": 1,
         "nombre": "4735",
-        "precio": 2500,
+        "precio": 2000,
         "urlImg": "https://drive.google.com/uc?id=1UsDnBK7V2NYjT23PxYRX5tVaYPESwyni",
         "stock": 5
     },{
         "id":2,
         "nombre": "4745",
-        "precio": 3200,
+        "precio": 2200,
         "urlImg": "https://drive.google.com/uc?id=1NV25u3bJrNKoAcqCPoaiCG1iRBgwbCQ9",
         "stock": 5
     },{
@@ -22,140 +22,140 @@
     {
         "id": 4,
         "nombre": "4755",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1-CIOzuF4TggFYIJ5BHX092Sqg1DEv93w",
         "stock": 5
     },
     {
         "id": 5,
         "nombre": "4760",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1TT710DJ30ml4Npe-uQBm60y8DajMXo6A",
         "stock": 5
     },
     {
         "id": 6,
         "nombre": "4765",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1qj8t9ZuFKi4gyb1TTIoywZrjngIDtLqz",
         "stock": 5
     },
     {
         "id": 7,
         "nombre": "4770",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1H07CY7u1EBAs-XjHnUm5NuDEGpIN8UnP",
         "stock": 5
     },
     {
         "id": 8,
         "nombre": "4900",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1wpiVewUrjcIqJqI8E_Mj7u72XKyYfgMn",
         "stock": 5
     },
     {
         "id": 9,
         "nombre": "8010",
-        "precio": "No disponible",
+        "precio": 2440,
         "urlImg": "https://drive.google.com/uc?id=115GM0XG8omv7PZsR0J_nWEAiK0hheWkH",
         "stock": 5
     },
     {
         "id": 10,
         "nombre": "8030",
-        "precio": "No disponible",
+        "precio": 2350,
         "urlImg": "https://drive.google.com/uc?id=1Nfx3ilMlzIOr7CVE3Rdl0A6mQzKqBG48",
         "stock": 5
     },
     {
         "id": 11,
         "nombre": "8035",
-        "precio": "No disponible",
+        "precio": 1340,
         "urlImg": "https://drive.google.com/uc?id=1HJDdi1l1iSwjS4dtrnvclE1DN80P_Xy9",
         "stock": 5
     },
     {
         "id": 12,
         "nombre": "8040",
-        "precio": "No disponible",
+        "precio": 2340,
         "urlImg": "https://drive.google.com/uc?id=1sxkBv0Tw3AQAkprpkIQfgvpeGxPvD1Wo",
         "stock": 5
     },
     {
         "id": 13,
         "nombre": "8050",
-        "precio": "No disponible",
+        "precio": 2350,
         "urlImg": "https://drive.google.com/uc?id=1IdWD1Zn3l2CTrNyeN7rcNMeU5CNgbkVB",
         "stock": 5
     },
     {
         "id": 14,
         "nombre": "8065",
-        "precio": "No disponible",
+        "precio": 2240,
         "urlImg": "https://drive.google.com/uc?id=1mpOoT-6YnnBvwujE6DqWZUmTydX1pBgJ",
         "stock": 5
     },
     {
         "id": 15,
         "nombre": "8075",
-        "precio": "No disponible",
+        "precio": 2360,
         "urlImg": "https://drive.google.com/uc?id=1v8LO09GrUgBALIUNWY25o6Owtv-B6PKW",
         "stock": 5
     },
     {
         "id": 16,
         "nombre": "9025",
-        "precio": "No disponible",
+        "precio": 2390,
         "urlImg": "https://drive.google.com/uc?id=1qtWlB9bnNjIcPSYnDkS7Qi_2wydmVazL",
         "stock": 5
     },
     {
         "id": 17,
         "nombre": "9030",
-        "precio": "No disponible",
+        "precio": 2740,
         "urlImg": "https://drive.google.com/uc?id=1Q6o-axRjAN88hX6hW-VT3tK4s3VzOZbl",
         "stock": 5
     },
     {
         "id": 18,
         "nombre": "9040",
-        "precio": "No disponible",
+        "precio": 2240,
         "urlImg": "https://drive.google.com/uc?id=18O-eBJd8fNBogXgPoBX_5iK8vQNUBjEN",
         "stock": 5
     },
     {
         "id": 19,
         "nombre": "9055",
-        "precio": "No disponible",
+        "precio": 2140,
         "urlImg": "https://drive.google.com/uc?id=1nD8u_8ZJdy0j6fqmLcaxZZvRNv_9FpwB",
         "stock": 5
     },
     {
         "id": 20,
         "nombre": "9060",
-        "precio": "No disponible",
+        "precio": 2240,
         "urlImg": "https://drive.google.com/uc?id=1vu-Mw_K8WkZd4vNzSVGb-PNqT2Dk7DBV",
         "stock": 5
     },
     {
         "id": 21,
         "nombre": "9080",
-        "precio": "No disponible",
+        "precio": 2440,
         "urlImg": "https://drive.google.com/uc?id=1Xzji96vHhZ2iRcZbuh0HAwXM4MBAsU-w",
         "stock": 5
     },
     {
         "id": 22,
         "nombre": "117",
-        "precio": "No disponible",
+        "precio": 2560,
         "urlImg": "https://drive.google.com/uc?id=10fn7Das86DH_WAq-t-GVoGs02jP0Kopk",
         "stock": 5
     },
     {
         "id": 23,
         "nombre": "120",
-        "precio": "No disponible",
+        "precio": 2430,
         "urlImg": "https://drive.google.com/uc?id=16U3neB5OkGjpNY9jOTMq-2pDZmaDXoYj",
         "stock": 5
     }

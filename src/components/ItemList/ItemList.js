@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function ItemList() {
 
+    
 
     function Producto({id, nombre, precio, urlImg}) {
         return (
@@ -16,7 +17,7 @@ export function ItemList() {
                 <Card.Img src={urlImg} variant="top"/>
                 <Card.Body>
                     <h2>Articulo {nombre}</h2>
-                    <h4>Precio: {precio}</h4>
+                    <h4>Precio: ${precio}</h4>
                     <Link to={`/detalleProducto/${id}`}><button className="detalle">Ver detalle</button></Link>
                 </Card.Body>
             </Card>
@@ -37,12 +38,12 @@ export function ItemList() {
 
     useEffect(() => {
         getItem(articulos)
-        
         .then((res) => {
             setProductos(res) 
         });
     }, []);
 
+    if(!productos) return <h1 className="loading">Cargando..</h1>
 
     return (
         <>
