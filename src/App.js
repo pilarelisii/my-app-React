@@ -11,8 +11,10 @@ import { Routes } from 'react-router';
 import React from 'react';
 import {  CartProvider } from './context/CartContext.js';
 
+
 function App() {
   
+
   return (
     <>
     <CartProvider>

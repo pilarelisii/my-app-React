@@ -3,8 +3,9 @@ import './ItemList.css';
 import { Link } from 'react-router-dom';
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import articulos from '../data/articulos.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { getFirestore } from '../../firebase'
+import { collection, getDocs } from 'firebase/firestore'
 
 export function ItemList() {
 
@@ -27,21 +28,14 @@ export function ItemList() {
     
     const [productos, setProductos] = useState(null);
     
-    const getItem = (Articulos) => 
-
-        new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(Articulos)
-        }, 2000);
-        });
-
-
     useEffect(() => {
-        getItem(articulos)
-        .then((res) => {
-            setProductos(res) 
-        });
-    }, []);
+        const db = getFirestore();
+        
+        getDocs(collection(db, "articulos"))
+        .then((snapshot) => {
+          setProductos(snapshot.docs.map(doc => doc.data()));
+        })
+      }, []);
 
     if(!productos) return <h1 className="loading">Cargando..</h1>
 

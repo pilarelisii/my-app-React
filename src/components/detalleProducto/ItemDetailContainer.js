@@ -1,40 +1,31 @@
 import './ItemDetail.css';
-import items from '../data/articulos.json';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { ItemDetail } from './ItemDetail';
-
+import { getFirestore } from '../../firebase'
+import { collection, getDocs, query, where } from 'firebase/firestore'
 
 export function ItemDetailContainer() {
-    
 
-
-    const { itemId } = useParams();
     const [item, setItem] = useState(null);
-    console.log('itemId: '+itemId)
+    const { itemId } = useParams();
 
-    const getDetail = (datos) => 
-        new Promise((resolve, reject) => {
-            setTimeout(() => {
-                resolve(datos)
-                console.log('datos: '+datos)
-            }, 1000);
-        });
-        
     useEffect(() => {
-         getDetail(items)
+        const db = getFirestore();
         
-        .then(res => {
-            itemId ? setItem(res.find(item => item.id === parseInt(itemId))) : setItem(items)
+        const q = query(collection(db, "articulos"), where('id', '==', parseInt(itemId)));
+        getDocs(q).then((snapshot) => {
+          setItem(snapshot.docs.map(doc => doc.data()));
         })
     }, [itemId]);
 
-    
-    if(!item) return(<h1 className="loading">Cargando..</h1> || null)
-   console.log(item)
+    console.log('itemId: '+itemId)
+
+    if(!item) return <h1 className="loading">Cargando..</h1>
+    console.log(item[0].id);
    return (
     <>
-        <ItemDetail id={item.id} nombre={item.nombre} precio={item.precio} urlImg={item.urlImg} stock={item.stock} />
+        <ItemDetail id={item[0].id} nombre={item[0].nombre} precio={item[0].precio} urlImg={item[0].urlImg} stock={item[0].stock} />
     </>
    );
 }

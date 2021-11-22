@@ -140,7 +140,7 @@
     },
     {
         "id": 21,
-        "nombre": "9080",
+        "nombre": "9080", 
         "precio": 2440,
         "urlImg": "https://drive.google.com/uc?id=1Xzji96vHhZ2iRcZbuh0HAwXM4MBAsU-w",
         "stock": 5
