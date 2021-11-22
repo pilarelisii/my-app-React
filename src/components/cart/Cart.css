@@ -1,11 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Montserrat:ital,wght@0,400;1,300&family=Raleway&display=swap');
-.item {
+.container-cart {
+    background-color: rgba(129, 112, 112, 0.253);
+}
+.container-form {
     width: 90%;
-    margin: auto auto 10px;
+    margin: 20px auto 20px auto ;
+    font-size: 'Nunito', sans-serif;
+}
+.card.item img {
+    width: 15%;
+    display: inline-block;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+.eachGroup {
+    flex: 1;
+    margin: 0 5px 0px 5px;
+}
+.item-body {
+    display: flex;
+    justify-content: space-between;
+}
+.card.item {
+    width: 90%;
+    margin: auto auto 10px;;
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    display: block;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
 }
 .clear {
     margin: 0 5% 10px;
     font-size: 2.5rem;
+}
+.clear:hover {
+    color: rgb(129, 112, 112);
+    transition: .3s;
+    cursor: pointer;
+}
+.delete {
+    font-size: 2rem;
+    margin: 'auto'
+}
+.delete:hover {
+    color: rgb(129, 67, 67);
+    transition: .3s;
+    cursor: pointer;
 }
 .notActive {
     display: none;

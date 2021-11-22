@@ -31,7 +31,7 @@ export function ItemDetail({id, nombre, precio, urlImg, stock}) {
             buttons: false
         })
         
-        addItem({id, nombre, precio}, quantity);
+        addItem({id, nombre, precio, urlImg}, quantity);
     }
     
     return (
