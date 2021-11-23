@@ -4,6 +4,10 @@
     font-family: 'Nunito', sans-serif;
 }
 .contenedor-contador {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #9b9b9b13;
+    border-radius: 5px;
     margin: 10px 5px 10px 5px;
     display: flex;
 }

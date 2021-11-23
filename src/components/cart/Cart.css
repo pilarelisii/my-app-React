@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito&family=Montserrat:ital,wght@0,400;1,300&family=Raleway&display=swap');
 .container-cart {
-    background-color: rgba(129, 112, 112, 0.253);
+    background-color: #f1f1f1;
+    padding-bottom: 30px;
+    margin: 0 auto 0 auto;
+    width: 90%;
 }
 .container-form {
     width: 90%;
@@ -33,6 +36,7 @@
     display: block;
     margin-left: 5%;
     margin-bottom: 20px;
+    padding-top: 30px;
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
 }

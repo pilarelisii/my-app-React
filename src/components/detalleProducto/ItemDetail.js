@@ -6,7 +6,7 @@ import React from 'react';
 import { UsingCart } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import {faTimes} from '@fortawesome/free-solid-svg-icons';
 
 export function ItemDetail({id, nombre, precio, urlImg, stock}) {
     
@@ -37,8 +37,9 @@ export function ItemDetail({id, nombre, precio, urlImg, stock}) {
     return (
         
         <>
-        <Link to="/"><FontAwesomeIcon icon={faChevronLeft} className="goBack"/></Link>
+        
         <section key={id} className="detalle-art">
+        <Link to="/"><FontAwesomeIcon icon={faTimes} className="goBack"/></Link>
             <article>
                 <h1 className="nombre-art">Articulo: {nombre} </h1>
                 <img src={urlImg} alt="aca iria la imagen"/>

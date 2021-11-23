@@ -1,13 +1,9 @@
-//internas
 import './Cart.css';
-// externas , estilos
 import { Card } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faTimes} from '@fortawesome/free-solid-svg-icons';
-import {faTrashAlt} from '@fortawesome/free-solid-svg-icons';
-//react
+import {faTimes, faTrashAlt} from '@fortawesome/free-solid-svg-icons';
 import { UsingCart } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
@@ -41,7 +37,7 @@ export function Cart() {
     }
     
     const sendOrder = () => {
-        if (name == '' || email == '' || number == '') {
+        if (name === '' || email === '' || number === '') {
             swal({
                 title: "¡Rellena el formulario completo!",
                 icon: 'error',
@@ -73,7 +69,7 @@ export function Cart() {
 
     return (
         <>
-        <section className="conatiner-cart">
+        <section className="container-cart">
         { show ? "" : 
         <><h1 className="title">Carrito de compras</h1>
         <FontAwesomeIcon icon={faTrashAlt} className="clear" onClick={clearCart} /></>

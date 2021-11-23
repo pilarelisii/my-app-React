@@ -11,8 +11,24 @@
  .contenedor-ItemList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between ;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+.forAdd {
+    font-size: 1.3rem;
+    display: flex;
+    margin-top: 10px;
+}
+.forAdd .child {
+    margin-right: 5px;
+    color: #46413a;
+}
+.title-list {
+    font-size: 4.5rem;
+    font-family: 'Bebas Neue', cursive;
+    margin: 15px 0 15px 5%;
 } 
 h2 {
     font-family: 'Bebas Neue', cursive;
@@ -36,9 +52,6 @@ h4 {
     background-color: #c2b29d86;
     transition: .2s;
 }
-/* .contenedor-ItemList img {
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    display: block;
-} */
+.contenedor-item {
+    margin-bottom: 15px;
+}

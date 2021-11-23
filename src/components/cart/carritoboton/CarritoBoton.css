@@ -1,13 +1,10 @@
-
 .carrito p {
-    font-size: 15px;
-    background-color: black;
-    color: white;
-    font-weight: 700;
-    border-radius: 10px;
-    padding: 4px;
+    font-size: 1.1rem;
+    color: black;
     display: inline;
-    margin: 5px;
+    margin-left: 8px;
+    margin-top: -15px;
+    font-family: 'Nunito', sans-serif;
 }
 .boton-carrito {
     border: 1px solid black;

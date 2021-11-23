@@ -19,10 +19,9 @@ export function ItemDetailContainer() {
         })
     }, [itemId]);
 
-    console.log('itemId: '+itemId)
 
     if(!item) return <h1 className="loading">Cargando..</h1>
-    console.log(item[0].id);
+    
    return (
     <>
         <ItemDetail id={item[0].id} nombre={item[0].nombre} precio={item[0].precio} urlImg={item[0].urlImg} stock={item[0].stock} />
